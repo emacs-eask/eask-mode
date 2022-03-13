@@ -6,6 +6,13 @@
 
 [![CI](https://github.com/emacs-eask/eask-mode/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-eask/eask-mode/actions/workflows/test.yml)
 
+## 🔨 Usage
+
+`Eask` file is just a regular Emacs aLisp file, but use to explicitly differentiate
+with other `.el` source files.
+
+Just open the Eask file, or `M-x eask-mode` should start the major mode explicitly
+
 ## Contribute
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
