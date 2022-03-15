@@ -71,9 +71,9 @@
   (setq font-lock-defaults '(eask-mode-font-lock-keywords))
   ;; FIXME: toggling comments only applies to the current line,
   ;; breaking multiline sexps.
-  (setq-local comment-start ";; ")
-  (setq-local comment-end "")
-  (setq-local indent-line-function #'lisp-indent-line))
+  (setq-local comment-start ";; "
+              comment-end ""
+              indent-line-function #'lisp-indent-line))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
