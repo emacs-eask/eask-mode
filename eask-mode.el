@@ -27,7 +27,7 @@
 
 ;;; Commentary:
 ;;
-;; major mode for editing Cask files.
+;; major mode for editing Eask files.
 ;;
 
 ;;; Code:
@@ -39,10 +39,36 @@
     (modify-syntax-entry ?: "_" table)
     table))
 
+(defface eask-mode-source-face
+  '((t :inherit font-lock-variable-name-face))
+  "Face for known eask sources."
+  :group 'eask-mode)
+
+(defface eask-mode-symbol-face
+  '((t :inherit font-lock-constant-face))
+  "Face for highlighting symbols (e.g. :git) in Eask files."
+  :group 'eask-mode)
+
+(defvar eask-mode-font-lock-keywords
+  `((,(regexp-opt
+       '("package" "package-file" "files" "depends-on" "development" "source" "source-priority")
+       'symbols)
+     . font-lock-keyword-face)
+    (,(regexp-opt
+       '("gnu" "melpa-stable" "melpa" "marmalade" "SC" "org")
+       'symbols)
+     . eask-mode-source-face)
+    (,(rx symbol-start
+          (or ":github" ":gitlab" "bitbucket" "wiki"
+              ":git" ":bzr" ":hg" ":darcs" ":fossil" ":svn" ":cvs")
+          symbol-end)
+     . eask-mode-symbol-face)))
+
 ;;;###autoload
 (define-derived-mode eask-mode emacs-lisp-mode "Eask"
   "Major mode for editing Eask files."
   :syntax-table eask-mode-syntax-table
+  (setq font-lock-defaults '(eask-mode-font-lock-keywords))
   ;; FIXME: toggling comments only applies to the current line,
   ;; breaking multiline sexps.
   (setq-local comment-start ";; ")
