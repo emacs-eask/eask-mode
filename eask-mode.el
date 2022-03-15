@@ -76,8 +76,7 @@
   (setq-local indent-line-function #'lisp-indent-line))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist
-             '("/Eask\\'" . eask-mode))
+(add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
 
 (provide 'eask-mode)
 ;;; eask-mode.el ends here
