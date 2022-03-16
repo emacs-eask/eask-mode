@@ -49,7 +49,7 @@
        '("package" "package-file" "files"
          "depends-on" "development"
          "source" "source-priority"
-         "load-path")
+         "load-path" "load-paths")
        'symbols)
      . font-lock-keyword-face)
     (,(rx symbol-start
