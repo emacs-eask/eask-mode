@@ -28,7 +28,7 @@ jobs:
               with:
                   version: ${{ matrix.emacs-version }}
 
-            - uses: cask/setup-cask@master
+            - uses: emacs-eask/setup-eask@master
               with:
                   version: 'snapshot'
 
@@ -56,7 +56,7 @@ jobs:
               with:
                   version: ${{ matrix.emacs-version }}
 
-            - uses: cask/setup-cask@master
+            - uses: emacs-eask/setup-eask@master
               with:
                   version: 'snapshot'
 

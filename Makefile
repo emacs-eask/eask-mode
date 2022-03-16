@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 
 EMACS ?= emacs
-CASK ?= cask
+EASK ?= eask
 
 PKG-FILES := eask-mode.el
 
@@ -9,21 +9,21 @@ TEST-FILES := $(shell ls test/eask-mode-*.el)
 
 .PHONY: clean checkdoc lint build compile unix-test
 
-ci: clean build compile
+ci: clean build
 
 build:
-	$(CASK) install
+	$(EASK) install
 
 compile:
 	@echo "Compiling..."
-	@$(CASK) $(EMACS) -Q --batch \
+	@$(EASK) $(EMACS) -Q --batch \
 		-L . \
 		--eval '(setq byte-compile-error-on-warn t)' \
 		-f batch-byte-compile $(PKG-FILES)
 
 unix-test:
 	@echo "Testing..."
-	$(CASK) exec ert-runner -L . $(LOAD-TEST-FILES) -t '!no-win' -t '!org'
+	$(EASK) exec ert-runner -L . $(LOAD-TEST-FILES) -t '!no-win' -t '!org'
 
 clean:
-	rm -rf .cask *.elc
+	rm -rf .eask *.elc
