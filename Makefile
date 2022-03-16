@@ -9,7 +9,7 @@ TEST-FILES := $(shell ls test/eask-mode-*.el)
 
 .PHONY: clean checkdoc lint build compile unix-test
 
-ci: clean build
+ci: clean build compile
 
 build:
 	$(EASK) install
