@@ -46,7 +46,10 @@
 
 (defconst eask-mode-font-lock-keywords
   `((,(regexp-opt
-       '("package" "package-file" "files" "depends-on" "development" "source" "source-priority")
+       '("package" "package-file" "files"
+         "depends-on" "development"
+         "source" "source-priority"
+         "load-path")
        'symbols)
      . font-lock-keyword-face)
     (,(rx symbol-start
