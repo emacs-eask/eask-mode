@@ -41,7 +41,7 @@
 
 (defface eask-mode-symbol-face
   '((t :inherit font-lock-constant-face))
-  "Face for highlighting symbols (e.g. :git) in Eask files. CIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+  "Face for highlighting symbols (e.g. :git) in Eask files."
   :group 'eask-mode)
 
 (defconst eask-mode-font-lock-keywords
