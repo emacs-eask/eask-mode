@@ -13,7 +13,7 @@ with other `.el` source files.
 
 Just open the Eask file, or `M-x eask-mode` should start the major mode explicitly
 
-![screenshot](./etc/screenshot.png)
+<img alt="screenshot" src="./etc/screenshot.png" width="60%"/>
 
 ## Contribute
 
