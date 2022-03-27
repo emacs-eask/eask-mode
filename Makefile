@@ -3,27 +3,27 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 EASK ?= eask
 
-PKG-FILES := eask-mode.el
-
 TEST-FILES := $(shell ls test/eask-mode-*.el)
 
-.PHONY: clean checkdoc lint build compile unix-test
+.PHONY: clean checkdoc lint package install compile test
 
-ci: clean build
+ci: clean package install compile
 
-build:
+package:
+	@echo "Packaging..."
+	$(EASK) package
+
+install:
+	@echo "Installing..."
 	$(EASK) install
 
 compile:
 	@echo "Compiling..."
-	@$(EASK) $(EMACS) -Q --batch \
-		-L . \
-		--eval '(setq byte-compile-error-on-warn t)' \
-		-f batch-byte-compile $(PKG-FILES)
+	$(EASK) compile
 
-unix-test:
+test:
 	@echo "Testing..."
 	$(EASK) exec ert-runner -L . $(LOAD-TEST-FILES) -t '!no-win' -t '!org'
 
 clean:
-	rm -rf .eask *.elc
+	rm -rf .cask *.elc
