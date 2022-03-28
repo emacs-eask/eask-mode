@@ -72,6 +72,8 @@
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
+;;;###autoload
+(add-to-list 'auto-mode-alist '("/Easkfile\\'" . eask-mode))
 
 (provide 'eask-mode)
 ;;; eask-mode.el ends here
