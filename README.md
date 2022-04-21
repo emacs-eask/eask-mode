@@ -1,5 +1,5 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![JCS-ELPA](https://raw.githubusercontent.com/jcs-emacs/jcs-elpa/master/badges/v/eask-mode.svg)](https://jcs-emacs.github.io/jcs-elpa/#/eask-mode)
+[![JCS-ELPA](https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/v/eask-mode.svg)](https://jcs-emacs.github.io/jcs-elpa/#/eask-mode)
 
 # eask-mode
 > major mode for editing Eask files
