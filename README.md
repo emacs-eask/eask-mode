@@ -8,7 +8,7 @@
 
 ## 🔨 Usage
 
-`Eask` file is just a regular Emacs aLisp file, but use to explicitly differentiate
+`Eask` file is just a regular Emacs Lisp file, but use to explicitly differentiate
 with other `.el` source files.
 
 Just open the Eask file, or `M-x eask-mode` should start the major mode explicitly
