@@ -46,7 +46,8 @@
 
 (defconst eask-mode-font-lock-keywords
   `((,(regexp-opt
-       '("package" "package-file" "files"
+       '("package" "website-url" "keywords"
+         "package-file" "files"
          "depends-on" "development"
          "source" "source-priority"
          "exec-paths" "load-paths")
