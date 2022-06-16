@@ -4,11 +4,10 @@
 ;; Created date 2022-03-14 03:38:51
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: major mode for editing Eask files.
-;; Keyword: eask
+;; URL: https://github.com/emacs-eask/eask-mode
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
-;; URL: https://github.com/emacs-eask/eask-mode
+;; Keywords: eask
 
 ;; This file is NOT part of GNU Emacs.
 

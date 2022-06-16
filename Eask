@@ -2,6 +2,9 @@
          "0.1.0"
          "major mode for editing Eask files")
 
+(website-url "https://github.com/emacs-eask/eask-mode")
+(keywords "eask")
+
 (package-file "eask-mode.el")
 
 (source "melpa")
