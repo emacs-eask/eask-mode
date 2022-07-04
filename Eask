@@ -3,7 +3,7 @@
          "major mode for editing Eask files")
 
 (website-url "https://github.com/emacs-eask/eask-mode")
-(keywords "eask")
+(keywords "lisp" "eask")
 
 (package-file "eask-mode.el")
 
