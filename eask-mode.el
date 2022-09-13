@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eask-mode
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ((emacs "24.3") (eask-api "0.1.0"))
 ;; Keywords: lisp eask
 
 ;; This file is NOT part of GNU Emacs.
@@ -30,6 +30,8 @@
 ;;
 
 ;;; Code:
+
+(require 'eask-api)
 
 (defvar eask-mode-syntax-table
   (let ((table (make-syntax-table)))
