@@ -47,11 +47,7 @@
 
 (defconst eask-mode-font-lock-keywords
   `((,(regexp-opt
-       '("package" "website-url" "keywords"
-         "package-file" "files"
-         "depends-on" "development"
-         "source" "source-priority"
-         "exec-paths" "load-paths")
+       eask-file-keywords
        'symbols)
      . font-lock-keyword-face)
     (,(rx symbol-start
@@ -73,9 +69,9 @@
   (setq-local indent-line-function #'lisp-indent-line))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
+(add-to-list 'auto-mode-alist '("/Easkfile[.0-9]*\\'" . eask-mode))
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("/Easkfile\\'" . eask-mode))
+(add-to-list 'auto-mode-alist '("/Eask[.0-9]*\\'" . eask-mode))
 
 (provide 'eask-mode)
 ;;; eask-mode.el ends here
