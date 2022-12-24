@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(require 'eask-api)
+(require 'eask-api-core)
 
 (defvar eask-mode-syntax-table
   (let ((table (make-syntax-table)))
