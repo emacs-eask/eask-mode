@@ -1,6 +1,6 @@
 (package "eask-mode"
          "0.1.0"
-         "major mode for editing Eask files")
+         "Major mode for editing Eask files")
 
 (website-url "https://github.com/emacs-eask/eask-mode")
 (keywords "lisp" "eask")
