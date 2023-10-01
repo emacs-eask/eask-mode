@@ -3,7 +3,7 @@
 <a href="#"><img align="right" src="https://raw.githubusercontent.com/emacs-eask/cli/master/docs/static/logo.png" width="20%"></a>
 
 # eask-mode
-> major mode for editing Eask files
+> Major mode for editing Eask files
 
 [![CI](https://github.com/emacs-eask/eask-mode/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-eask/eask-mode/actions/workflows/test.yml)
 
