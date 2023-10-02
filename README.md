@@ -1,5 +1,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![JCS-ELPA](https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/v/eask-mode.svg)](https://jcs-emacs.github.io/jcs-elpa/#/eask-mode)
+[![MELPA](https://melpa.org/packages/eask-mode-badge.svg)](https://melpa.org/#/eask-mode)
+[![MELPA Stable](https://stable.melpa.org/packages/eask-mode-badge.svg)](https://stable.melpa.org/#/eask-mode)
 <a href="#"><img align="right" src="https://raw.githubusercontent.com/emacs-eask/cli/master/docs/static/logo.png" width="20%"></a>
 
 # eask-mode
