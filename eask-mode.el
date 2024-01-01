@@ -1,6 +1,6 @@
 ;;; eask-mode.el --- Major mode for editing Eask files  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022-2023  Shen, Jen-Chieh
+;; Copyright (C) 2022-2024  Shen, Jen-Chieh
 ;; Created date 2022-03-14 03:38:51
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
