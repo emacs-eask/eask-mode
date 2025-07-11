@@ -8,7 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.1.1 (Unreleased)
 > Released N/A
 
-* Use built-in API variables (#1)
+* Use built-in API variables ([`#1`](../../pull/1))
 
 ## 0.1.0
 > Released Sep 08, 2022
